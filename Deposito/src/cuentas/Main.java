@@ -1,5 +1,11 @@
 package cuentas;
 
+/**
+ * Clase que corre el programa y sirve de interfaz con el usuario
+ * 
+ * @author SolGlez
+ * @see Deposito/scr/cuentas/CCuenta
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -13,7 +19,13 @@ public class Main {
         operativa_cuenta(cuenta1, 0);
         //Comentario añadidio para segundo commit
     }
-
+    
+    /**
+     * Método que engloba los procesos de interacción con la cuenta
+     * 
+     * @param cuenta1 instancia de CCuenta con la que se trabaja
+     * @param cantidad que ingresar o retirar
+     */
 	private static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
 		try {
             cuenta1.retirar(2300);
